@@ -1,5 +1,7 @@
 # C#
 
+## [C# Basics](udemy/README.md)
+
 ## [Learn C# Book](LearnC%23/readme.md)
 
 ## [Microsoft Learn](MicrosoftLearn/readme.md)
