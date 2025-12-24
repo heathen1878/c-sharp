@@ -38,6 +38,7 @@ namespace VariablesAndConstants
             Console.WriteLine(number); // This will output 0
 
             // Scope
+            // var allows the c# compiler to detect the data type
             var globalVar = 0;
             {
                 var firstLevelVar = 1;
@@ -61,6 +62,33 @@ namespace VariablesAndConstants
                 }
                 //Console.WriteLine(secondLevelVar); // This will throw a compile error
             }
+
+            System.Console.WriteLine("The minimum {0} and maximum {1} values for the byte type", byte.MinValue, byte.MaxValue);
+
+            // Type conversion
+            // Implicit
+            byte ib = 1;
+            int ii = ib;
+            System.Console.WriteLine(ib);
+            System.Console.WriteLine(ii);
+
+            // Explicit
+            // setting this to a value greater than 255 will cause data loss
+            int ei = 1;
+            //int ei = 256; // eb will equal 0
+            byte eb = (byte)ei;
+            System.Console.WriteLine(ei);
+            System.Console.WriteLine(eb);
+
+            // Non compatible
+            string ncs = "1";
+            System.Console.WriteLine("As a string {0}", ncs);
+
+            int nci = Convert.ToInt32(ncs);
+            System.Console.WriteLine("As an integer {0}", nci);
+
+            int ncj = int.Parse(ncs);
+            System.Console.WriteLine("As an parsed integer {0}", ncj);
         }
     }
 }
