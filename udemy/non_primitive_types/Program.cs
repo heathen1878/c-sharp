@@ -40,8 +40,60 @@ namespace non_primitive_types
                 System.Console.WriteLine(number);
             }
 
+            // Strings
+            // strings are immutable
+            string firstName;
+            string surname;
+            string fullName;
 
+            firstName = "Dom";
+            surname = "Clayton";
+            fullName = string.Format("{0} {1}", firstName, surname);
+            System.Console.WriteLine(fullName);
+
+            // Escape characters
+            // \n - new line
+            // \t - tab
+            // \\ - backslash
+            // \' - single quote
+            // \" - double quote
+
+            // verbatim strings
+            string path = @"c:\projects\some folder\";
+            System.Console.WriteLine(path);
+
+            string multiLine = @"
+This is a multi line string
+and it is represented as such...
+            ";
+            System.Console.WriteLine(multiLine);
+            var namesOfFolk = new string[3] { "Dom", "Bob", "Bill" };
+
+            System.Console.WriteLine(string.Join(";", namesOfFolk));
+
+            // Enums
+            // Use where you have related constants
+            var delivery = ShippingMethods.FirstClass;
+            System.Console.WriteLine("Delivery using {0}", delivery);
+            System.Console.WriteLine("The value of delivery is {0}", (byte)delivery);
+
+            var deliveryId = 3;
+            System.Console.WriteLine("The delivery method is {0}", (ShippingMethods)deliveryId);
+
+            System.Console.WriteLine(delivery);
+
+            var deliveryName = "ExpressDelivery";
+
+            // Parse a string to a Enum
+            var shippingMethod = (ShippingMethods)Enum.Parse(typeof(ShippingMethods), deliveryName);
         }
+    }
+
+    public enum ShippingMethods : byte
+    {
+        FirstClass = 1,
+        SecondClass = 2,
+        ExpressDelivery = 3
     }
 
     public struct RgbColour
