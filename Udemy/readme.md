@@ -34,4 +34,10 @@ dotnet build Udemy/Section2
 dotnet run --project Udemy/Section2
 ```
 
+## Variables
+
+See [here](variables/readme.md).
+
+
+
 
