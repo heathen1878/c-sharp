@@ -38,6 +38,10 @@ dotnet run --project Udemy/Section2
 
 See [here](variables/readme.md).
 
+## Operators
+
+See [here](operators/readme.md)
+
 
 
 

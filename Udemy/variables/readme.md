@@ -2,6 +2,8 @@
 
 [Home](../readme.md)
 
+See [program](variables_and_constants/Program.cs) for examples
+
 ## Defintions
 
 `Variable`: a name given to a storage location in memory
@@ -85,6 +87,8 @@ c# char -> Char in .NET - no. of Bytes 2
 c# bool -> Boolean in .NET - no. of Bytes 1
 
 ##### Scope
+
+
 
 
 
