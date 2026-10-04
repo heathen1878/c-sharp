@@ -1,4 +1,4 @@
-# Varibles
+# Variables
 
 [Home](../readme.md)
 
@@ -19,7 +19,82 @@ constant type identifier value
 const float Pi = 3.14f;
 ```
 
+Variable identifers are case sensistive, and cannot start with a number, cannot have any whitespace, and cannot use a keyword. Names should be meaningful.
+
+Variables must be initialised before use...for example...
+
+```c#
+
+```
+
+### Naming Conventions
+
+Camel Case: `firstName` - local variables
+
+Pascal Case: `FirstName` - constants
+
+Hungarian Notification: `strFirstName` - not used in c#
+
+### Primative Types
+
+#### Integral Numbers
+
+The larger the number(s) to the larger the data type
+
+c# byte -> Byte in .NET - no. of Bytes 1
+c# short -> Int16 in .NET - no. of Bytes 2
+c# int -> Int32 in .NET - no. of Bytes 4
+c# long -> Int64 in .NET - no. of Bytes 8
+
+##### Overflowing
+
+```c#
+byte number = 255;
+
+number = number + 1; // Will overflow to 0
+
+// Checked
+checked
+{
+    byte number = 255;
+
+    number + number + 1;
+}
+// Will it be used, probably not...move the data type to short...
+```
+
+#### Real Numbers
+
+The more precision the larger the data type
+
+c# float -> Single in .NET - no. of Bytes 4
+c# double -> Double in .NET - no. of Bytes 8 - Default data type
+c# decimal -> Decimal in .NET - no. of Bytes 16
+
+```c#
+float number = 1.2f; // use float
+decimal number = 1.2m; // use decimal
+```
+
+#### Character
+
+c# char -> Char in .NET - no. of Bytes 2
+
+#### Boolean
+
+c# bool -> Boolean in .NET - no. of Bytes 1
+
+##### Scope
 
 
 
+### Non-Primative Types
+
+#### String
+
+#### Array
+
+#### Enum
+
+#### Class
 
