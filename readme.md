@@ -1,6 +1,6 @@
 # C#
 
-## [c# for beginners](Udemy/readme.md)
+## [Udemy C#](Udemy/readme.md)
 
 ## [Learn C# Book](LearnC%23/readme.md)
 
