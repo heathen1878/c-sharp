@@ -26,6 +26,12 @@ Assembly is a container for related namespaces - can be .exe or .dll
 
 ### Hello World
 
-Simple Hello World app using the Console class.
+Simple Hello World [app](Section2/Program.cs) using the Console class
+
+```shell
+dotnet build Udemy/Section2
+
+dotnet run --project Udemy/Section2
+```
 
 
