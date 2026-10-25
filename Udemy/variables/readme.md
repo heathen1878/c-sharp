@@ -9,6 +9,8 @@ See [program](variables_and_constants/Program.cs) for examples
 `Variable`: a name given to a storage location in memory
 `Constant`:an immutable value - known at compile time and cannot change during the lifetime of the app running.
 
+Once a variable has been given a type it cannot change in the lifetime of that variable...C# is statically typed...
+
 A good example for a `Constant` is `pi` = `3.14` - this is always the case and must not change. The same premise should be used in for application values.
 
 ```c#
@@ -38,6 +40,8 @@ Pascal Case: `FirstName` - constants
 Hungarian Notification: `strFirstName` - not used in c#
 
 ### Primative Types
+
+All Primative Types are structs...
 
 #### Integral Numbers
 
@@ -88,17 +92,15 @@ c# bool -> Boolean in .NET - no. of Bytes 1
 
 ##### Scope
 
+This is where a variable or constant has meaning; variables defined within a block of code
 
-
-
-
-### Non-Primative Types
-
-#### String
-
-#### Array
-
-#### Enum
-
-#### Class
-
+```c#
+{
+    var a = 1;
+    {
+        // var a is accessible here
+        var b = 1;
+    }
+    // var b isn't accessible here
+}
+```
